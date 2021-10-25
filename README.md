@@ -1,2 +1,2 @@
-# InfoVIz3
+# InfoViz3
 A starter on interactive Data VIsualisation
