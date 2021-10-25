@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-}
+} *
 
 body {
     margin: 0;
@@ -8,8 +8,12 @@ body {
     font-size: 16px;
 }
 
+header, footer, main {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
 header, footer {
-    margin: 0 auto;
     text-align: center;
 }
 
