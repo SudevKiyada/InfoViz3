@@ -10,7 +10,7 @@ body {
 
 header, footer, main {
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 80%;
 }
 
 header, footer {
@@ -25,6 +25,34 @@ nav {
     padding: 48px;
 }
 
-.plotStyle {
-    font-size: 20px;
+/* .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+} */
+
+.chart-container {
+    width: 540px;
+    height: 50vh;
+    border-radius: 12px;
+    border: none;
+    /* background-color: lightsalmon; */
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+}
+
+.chart-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.chart-container:last-child {
+    flex-grow: 3;
 }
