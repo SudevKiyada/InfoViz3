@@ -39,7 +39,7 @@ header, footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 80px 0px;
@@ -74,6 +74,6 @@ nav {
 }
 
 .full {
-    flex-grow: 3;
-    /* width: (540*3)px; */
+    flex-grow: 1;
+    width: 1200px;
 }
