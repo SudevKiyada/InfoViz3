@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 } *
 
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: 'Sora', sans-serif;
 }
 
 header, footer, main {
@@ -17,12 +20,29 @@ header, footer {
     text-align: center;
 }
 
+.menu {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.submenu {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.submenu > li {
+    margin-left: 40px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 48px;
+    padding: 80px 0px;
 }
 
 /* .chart-grid {
@@ -53,6 +73,7 @@ nav {
     gap: 30px;
 }
 
-.chart-container:last-child {
+.full {
     flex-grow: 3;
+    width: (540*3)px;
 }
