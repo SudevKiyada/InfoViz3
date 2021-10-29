@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-} *
+}
 
 body {
     margin: 0;
@@ -11,13 +11,14 @@ body {
     font-family: 'Sora', sans-serif;
 }
 
-header, footer, main {
+header, footer {
     margin: 20px auto;
     max-width: 80%;
 }
 
 header, footer {
     text-align: center;
+    padding-top: 2em;
 }
 
 .menu {
@@ -65,6 +66,11 @@ nav {
     height: 100%;
 }
 
+.content{
+    width: 100px;
+    height: 100%;
+}
+
 .chart-grid {
     display: flex;
     justify-content: space-between;
@@ -74,6 +80,33 @@ nav {
 }
 
 .full {
-    flex-grow: 1;
+    flex-basis: 100%;
     width: 1200px;
+}
+
+.wrapper {
+    width: 80ch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.full-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.test {
+}
+
+.info {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.image {
+    width: 100%;
+    padding-top: 2em;
 }
